@@ -4,15 +4,31 @@ import "./ExpenseForm.css";
 const ExpenseForm = (props) => {
     // const [enteredTitle, setEnteredTitle] = useState("");
     const titleChangeHandler = (e) => {
-        setUserInput({ ...userInput, enteredTitle: e.target.value });
+        // setUserInput({ ...userInput, enteredTitle: e.target.value });
+        setUserInput((prevState) => {
+            return {
+                ...prevState,
+                enteredTitle: e.target.value,
+            };
+        });
     };
     // const [enteredAmount, setEnteredAmount] = useState("");
     const amountChangeHandler = (e) => {
-        setUserInput({ ...userInput, enteredAmount: e.target.value });
+        setUserInput((prevState) => {
+            return {
+                ...prevState,
+                entereAmount: e.target.value,
+            };
+        });
     };
     // const [enteredDate, setEnteredDate] = useState("");
     const dateChangeHandler = (e) => {
-        setUserInput({ ...userInput, enteredDate: e.target.value });
+        setUserInput((prevState) => {
+            return {
+                ...prevState,
+                entereDate: e.target.value,
+            };
+        });
     };
 
     const [userInput, setUserInput] = useState({
