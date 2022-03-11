@@ -17,7 +17,7 @@ const ExpenseForm = (props) => {
         setUserInput((prevState) => {
             return {
                 ...prevState,
-                entereAmount: e.target.value,
+                enteredAmount: e.target.value,
             };
         });
     };
@@ -26,7 +26,7 @@ const ExpenseForm = (props) => {
         setUserInput((prevState) => {
             return {
                 ...prevState,
-                entereDate: e.target.value,
+                enteredDate: e.target.value,
             };
         });
     };
