@@ -6,13 +6,13 @@ const App = () => {
             id: "1",
             title: "Car rent",
             amount: 123.67,
-            date: new Date(2021, 2, 28),
+            date: new Date(2022, 2, 28),
         },
         {
             id: "2",
             title: "Insurance",
             amount: 422.89,
-            date: new Date(2021, 1, 24),
+            date: new Date(2019, 1, 24),
         },
         {
             id: "3",
@@ -24,7 +24,7 @@ const App = () => {
             id: "4",
             title: "Doctor visit",
             amount: 76.75,
-            date: new Date(2021, 4, 2),
+            date: new Date(2020, 4, 2),
         },
     ];
 
